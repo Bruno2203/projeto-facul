@@ -29,8 +29,14 @@ main{
 .avalicao_produto{
     display: inline;
 }
+.quantidade{
+    position: absolute;
+    left: 24.5%;
+    top: 43%;
+}
 .valor{
-    margin-right: 10%;
+    margin-left: 32%;
+    margin-top: 4%;
 }
 .comeco{
     display: flex;
