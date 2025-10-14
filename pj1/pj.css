@@ -5,6 +5,11 @@ header{
     background-color: #c0c0c0;
     height: 120px;
 }
+.perfil{
+    position: relative;
+    left: 80%;
+    top: -20px;
+}
 main{
     padding: 30px;
 }
@@ -15,6 +20,14 @@ main{
     margin-right: auto;
     background-color: #d9d9d9;
     border-radius: 10px;
+}
+.botao{
+    background-color: #8f151500;
+    border: #8f151500;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -10px;
+    height: 10px;
 }
 .pneu{
     margin-right: 30px;
@@ -30,9 +43,10 @@ main{
     display: inline;
 }
 .quantidade{
-    position: absolute;
-    left: 24.5%;
+    position: relative;
+    left: -71%;
     top: 43%;
+    margin-top: -1%;    
 }
 .valor{
     margin-left: 32%;
@@ -40,8 +54,9 @@ main{
 }
 .comeco{
     display: flex;
+    padding: 10px;
 }
-.produtos{
+#produtos{
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
@@ -58,9 +73,77 @@ main{
     width: 45px;
     height: 45px;
     margin-left: 47px;
-    margin-top: 13px;
+    margin-top: 0px;
     margin-right: 10px;
 }
 main{
     background-color: #8f1515;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Variáveis para usar no CSS */
+:root {
+    --cor-primaria: #8F1515;
+    --cor-secundaria: #c0c0c0;
+    --cor-texto: #000000;
+    --cor-texto-claro: #ffffff;
+    --fonte-principal: "Inter", sans-serif;
+    --espacamento: 3rem;
+    --border-radius: 8px;
+    --transicao: all 0.3s ease;
+}
+
+/* Reset e base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.footer-coluna h3 {
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info img {
+    width: 20px;
+}
+
+.footer-info a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: var(--transicao);
+}
+
+.footer-info a:hover {
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #999;
 }

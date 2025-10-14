@@ -10,6 +10,7 @@
 <body>
     <header>
         <img src="img/logo.png" class="logo">
+        <a href="#"><img src="img/perfil.png" class="perfil"></a>
     </header>
     <main>
         <div class="conteiner">
@@ -18,7 +19,7 @@
                 <h2>Carrinho</h2>
             </div>
             <br>
-            <div class="produtos">
+            <div id="produtos">
                 <img src="img/pneu.png" class="pneu">
                 <br>
                 <div class=" avaliacao_produto"></div>
@@ -26,17 +27,60 @@
                 3.0</h3><br>
                 <img src="img/3 estrelas.png" class="estrelas">
                 <h3 class="valor">R$275,00</h3>
+                <div class="quantidade">
+                    <button class="botao"><img src="img/lixeira.png" alt="lixeira"></button>
+                    <button id="menos">-</button>
+                    <span id="span"></span>
+                    <button id="mais">+</button>
+                </div>
             </div>
-            <div class="quantidade">
-                <button id="menos">-</button>
-                <span id="span"></span>
-                <button id="mais">+</button>
-            </div>
+            
+            
         </div>
     </main>
     <footer>
+        <div class="footer-container">
+            <div class="footer-coluna">
+                <h3>Horário de atendimento</h3>
+                <p>Segunda à sexta: 7h30 - 18h00</p>
+                <p>Sábado: 7h30 - 12h00</p>
+            </div>
 
-    </footer>
+            <div class="footer-coluna">
+                <h3>Onde estamos</h3>
+                <div class="footer-info">
+                    <img src="img/loc.png" alt="Localização">
+                    <p>Av. Beira-Rio - Vila Portes, Foz do Iguaçu</p>
+                </div>
+                <div class="footer-info">
+                    <img src="img/whats.png" alt="WhatsApp">
+                    <p>‪+55 (45) 99905-1549‬</p>
+                </div>
+                <div class="footer-info">
+                    <img src="img/EMAIL.png" alt="E-mail">
+                    <p>autocentersilvamkt@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-coluna">
+                <h3>Redes sociais</h3>
+                <div class="footer-info">
+                    <img src="img/insta.png" alt="Instagram">
+                    <a href="https://instagram.com/autocentersilvaa" target="_blank">autocentersilvaa</a>
+                </div>
+
+                <div class="footer-info">
+                    <img src="img/facebook.png" alt="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61578792843865" target="_blank">Auto Center
+                        Silva</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 Auto Center Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="pj.js"></script>
 </body>
 </html>

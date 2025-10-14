@@ -17,10 +17,11 @@ menos.addEventListener('click', function() {
 mais.addEventListener('click', function() {
     contador++;
     span_numero.textContent = contador;
-    if (contador <= 0) {
+    if (contador >= 1) {
         menos.disabled = false;
     }
 })
+/*---------------------------------------------------------------------------------------------*/
 
 
 
